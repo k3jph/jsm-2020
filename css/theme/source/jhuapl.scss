@@ -1,0 +1,98 @@
+/**
+ * White theme for reveal.js. This is the opposite of the 'black' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url('//fonts.googleapis.com/css?family=PT Sans');
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #000;
+
+$mainColor: #002D72;
+$headingColor: #002D72;
+
+$mainFontSize: 24px;
+$mainFont: 'PT Sans', Helvetica, sans-serif;
+$headingFont: 'PT Sans', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: #8A2A2B;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+section.has-dark-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #fff;
+	}
+}
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.controls-arrow { display: none; }
+
+.title-slide {
+	text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-align: left;
+	margin-left: 1em;
+}
+
+.featured {
+	width: 40%;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	clear: none;
+
+	img {
+		margin: 0;
+		padding: 0;
+		max-width: 100%;
+		max-height: 20%;
+	}
+
+	figcaption {
+		text-align: left;
+		font-size: .6rem;
+	}
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+.mermaid {
+	margin: 2rem;
+	font-size: .8rem;
+}
+
+.footnote {
+	margin-top: 4rem;
+	margin-bottom: 0px;
+	text-align: left;
+	font-size: 0.8rem;
+}

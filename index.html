@@ -85,19 +85,23 @@
 
 						## The SIR Model
 
+						<div>
+
 						* Standard epidemiological model
 							* Multicompartment mode
 							* Catenary model of progression
-						* Cell Descriptions
+						* Cell descriptions
 							* S: susceptible, base pool of persons
 							* I: infective, those who can transmit
 							* R: removed, through recovery or death
 
-						<div class="mermaid">
-						graph LR
-							S(Susceptible) --> I(Infective)
-							I --> R(Removed)
 						</div>
+
+						<figure>
+							<img src="img/sir-model.svg" />
+						</figure>
+
+
 					</textarea>
 				</section>
 				<section class="" data-background-image="img/jhuapl-background-blank.png" data-background-size="contain" data-markdown>
@@ -201,7 +205,5 @@
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ]
 			});
 		</script>
-		<script src="https://unpkg.com/mermaid@8.6.0/dist/mermaid.min.js"></script>
-		<script>mermaid.initialize({ startOnLoad: true });</script>
 	</body>
 </html>
